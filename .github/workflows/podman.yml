@@ -6,4 +6,4 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Run a podman container from a GitHub runner
-        run: podman run -dt registry.redhat.io/ubi8:latest sleep infinity
+        run: podman run -dt registry.redhat.io/ubi8:latest /bin/bash
