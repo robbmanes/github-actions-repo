@@ -1,0 +1,9 @@
+name: Podman
+on: issue_comment
+jobs:
+  podman_job:
+    name: Podman self-hosted
+    runs-on: self-hosted
+    steps:
+      - name: Run a podman container from a GitHub runner
+        run: podman run -dt registry.redhat.io/ubi8:latest sleep infinity
